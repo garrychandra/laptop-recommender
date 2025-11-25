@@ -1,0 +1,23 @@
+[
+  { "text": "Halo", "intent": "greeting" },
+  { "text": "Hai", "intent": "greeting" },
+  { "text": "Selamat pagi", "intent": "greeting" },
+  { "text": "Selamat malam", "intent": "greeting" },
+  { "text": "Permisi", "intent": "greeting" },
+
+  { "text": "Saya butuh rekomendasi laptop", "intent": "ask_recommendation" },
+  { "text": "Laptop apa yang bagus untuk gaming?", "intent": "ask_recommendation" },
+  { "text": "Ada saran laptop murah untuk kuliah?", "intent": "ask_recommendation" },
+  { "text": "Rekomendasi laptop editing video dong", "intent": "ask_recommendation" },
+  { "text": "Saya bingung pilih laptop mana", "intent": "ask_recommendation" },
+
+  { "text": "Terima kasih", "intent": "goodbye" },
+  { "text": "Makasih ya", "intent": "goodbye" },
+  { "text": "Sudah ya, dadah", "intent": "goodbye" },
+  { "text": "Sampai jumpa", "intent": "goodbye" },
+  { "text": "Bye", "intent": "goodbye" },
+
+  { "text": "????", "intent": "fallback" },
+  { "text": "Apa sih ini", "intent": "fallback" },
+  { "text": "Saya tidak paham", "intent": "fallback" },
+]

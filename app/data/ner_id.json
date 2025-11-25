@@ -1,0 +1,169 @@
+[
+  {
+    "text": "Saya butuh laptop Asus untuk gaming",
+    "entities": [
+      { "start": 18, "end": 22, "label": "BRAND" },
+      { "start": 29, "end": 35, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Acer yang bagus buat coding",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 29, "end": 35, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari Lenovo untuk editing video",
+    "entities": [
+      { "start": 10, "end": 16, "label": "BRAND" },
+      { "start": 23, "end": 30, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya punya budget 10 juta",
+    "entities": [
+      { "start": 17, "end": 24, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau laptop RAM 16GB untuk gaming",
+    "entities": [
+      { "start": 12, "end": 17, "label": "RAM" },
+      { "start": 25, "end": 31, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya butuh laptop 8GB RAM buat kuliah",
+    "entities": [
+      { "start": 18, "end": 21, "label": "RAM" },
+      { "start": 31, "end": 37, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Yang penting storage 512GB",
+    "entities": [
+      { "start": 17, "end": 22, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Saya mau layar 14 inci",
+    "entities": [
+      { "start": 15, "end": 17, "label": "SCREEN_SIZE" }
+    ]
+  },
+  {
+    "text": "Saya ingin 15.6 inch untuk kerja",
+    "entities": [
+      { "start": 11, "end": 17, "label": "SCREEN_SIZE" },
+      { "start": 24, "end": 29, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Dell cocok untuk gaming",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 18, "end": 24, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "MSI bagus untuk main game",
+    "entities": [
+      { "start": 0, "end": 3, "label": "BRAND" },
+      { "start": 19, "end": 23, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya pengen Acer RAM 8GB buat kuliah",
+    "entities": [
+      { "start": 12, "end": 16, "label": "BRAND" },
+      { "start": 21, "end": 24, "label": "RAM" },
+      { "start": 30, "end": 36, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh SSD 512GB atau 1TB",
+    "entities": [
+      { "start": 10, "end": 15, "label": "STORAGE" },
+      { "start": 21, "end": 24, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Budget saya cuma 8jt",
+    "entities": [
+      { "start": 17, "end": 20, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau laptop untuk desain grafis",
+    "entities": [
+      { "start": 17, "end": 23, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop layar 13 inch yang ringan",
+    "entities": [
+      { "start": 13, "end": 20, "label": "SCREEN_SIZE" }
+    ]
+  },
+  {
+    "text": "Butuh HP RAM 32GB",
+    "entities": [
+      { "start": 6, "end": 8, "label": "BRAND" },
+      { "start": 13, "end": 18, "label": "RAM" }
+    ]
+  },
+  {
+    "text": "Lenovo Thinkpad cocok kerja kantoran",
+    "entities": [
+      { "start": 0, "end": 6, "label": "BRAND" },
+      { "start": 21, "end": 26, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Asus buat kuliah",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 17, "end": 23, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya ingin RAM 32 GB",
+    "entities": [
+      { "start": 11, "end": 17, "label": "RAM" }
+    ]
+  },
+  {
+    "text": "Butuh storage 1TB",
+    "entities": [
+      { "start": 14, "end": 17, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Cari laptop gaming 10 juta",
+    "entities": [
+      { "start": 11, "end": 17, "label": "USAGE" },
+      { "start": 18, "end": 25, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Saya butuh untuk programming",
+    "entities": [
+      { "start": 15, "end": 26, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Dell cocok editing",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 19, "end": 26, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Prefer 15 inch untuk gaming",
+    "entities": [
+      { "start": 7, "end": 13, "label": "SCREEN_SIZE" },
+      { "start": 21, "end": 27, "label": "USAGE" }
+    ]
+  }
+]

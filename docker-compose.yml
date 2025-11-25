@@ -1,0 +1,22 @@
+services:
+  laptop_api:
+    build: .
+    container_name: laptop-recommender
+    ports:
+      - "5001:5000"
+      - "8888:8888"  # Jupyter
+    volumes:
+      - ./app:/app
+      - ./laptops.csv:/app/laptops.csv
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    command: tail -f /dev/null  # Keep container running
+    stdin_open: true
+    tty: true
