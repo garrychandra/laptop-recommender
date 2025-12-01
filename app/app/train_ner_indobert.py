@@ -73,7 +73,8 @@ args = TrainingArguments(
     num_train_epochs=5,
     per_device_train_batch_size=4,
     eval_strategy="epoch",
-    logging_steps=10
+    logging_steps=10,
+    save_strategy="no"  # Disable checkpoint saving
 )
 
 metric = evaluate.load("seqeval")

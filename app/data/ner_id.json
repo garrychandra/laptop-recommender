@@ -14,6 +14,154 @@
     ]
   },
   {
+    "text": "Saya cari laptop Asus yang ada touchscreen untuk desain grafis",
+    "entities": [
+      { "start": 15, "end": 19, "label": "BRAND" },
+      { "start": 29, "end": 40, "label": "TOUCHSCREEN" },
+      { "start": 47, "end": 53, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop Dell RAM 8GB untuk kerja remote",
+    "entities": [
+      { "start": 12, "end": 16, "label": "BRAND" },
+      { "start": 17, "end": 25, "label": "RAM" },
+      { "start": 32, "end": 43, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau laptop tipis layar 14 inch RAM 16GB buat kuliah dan kerja",
+    "entities": [
+      { "start": 18, "end": 27, "label": "SCREEN_SIZE" },
+      { "start": 28, "end": 36, "label": "RAM" },
+      { "start": 42, "end": 48, "label": "USAGE" },
+      { "start": 53, "end": 58, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Budget maksimal 15 juta untuk laptop gaming",
+    "entities": [
+      { "start": 7, "end": 22, "label": "BUDGET" },
+      { "start": 31, "end": 37, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya punya budget 5 sampai 7 juta untuk laptop anak sekolah",
+    "entities": [
+      { "start": 12, "end": 31, "label": "BUDGET" },
+      { "start": 40, "end": 52, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Cari ultrabook dengan storage 512GB dan RAM 16GB untuk programming",
+    "entities": [
+      { "start": 23, "end": 30, "label": "STORAGE" },
+      { "start": 35, "end": 43, "label": "RAM" },
+      { "start": 50, "end": 61, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Lenovo layar 15.6 inch cocok untuk editing video",
+    "entities": [
+      { "start": 7, "end": 13, "label": "BRAND" },
+      { "start": 20, "end": 30, "label": "SCREEN_SIZE" },
+      { "start": 39, "end": 52, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop HP dengan RAM 32GB dan storage 1TB untuk kerja kantoran",
+    "entities": [
+      { "start": 12, "end": 14, "label": "BRAND" },
+      { "start": 25, "end": 33, "label": "RAM" },
+      { "start": 38, "end": 45, "label": "STORAGE" },
+      { "start": 52, "end": 66, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau Macbook layar 13 inch untuk desain dan editing foto",
+    "entities": [
+      { "start": 4, "end": 11, "label": "BRAND" },
+      { "start": 18, "end": 27, "label": "SCREEN_SIZE" },
+      { "start": 34, "end": 40, "label": "USAGE" },
+      { "start": 45, "end": 58, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop gaming dengan RAM 16GB dan SSD 1TB sekitar 20 juta",
+    "entities": [
+      { "start": 7, "end": 13, "label": "USAGE" },
+      { "start": 26, "end": 34, "label": "RAM" },
+      { "start": 39, "end": 46, "label": "STORAGE" },
+      { "start": 56, "end": 64, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Saya butuh laptop touchscreen dengan stylus untuk desain ilustrasi",
+    "entities": [
+      { "start": 16, "end": 27, "label": "TOUCHSCREEN" },
+      { "start": 44, "end": 59, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Cari laptop murah RAM 8GB storage 256GB buat ngetik dan browsing",
+    "entities": [
+      { "start": 18, "end": 25, "label": "RAM" },
+      { "start": 26, "end": 38, "label": "STORAGE" },
+      { "start": 44, "end": 50, "label": "USAGE" },
+      { "start": 55, "end": 63, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop Asus layar 14 inch dengan budget 9 juta",
+    "entities": [
+      { "start": 12, "end": 16, "label": "BRAND" },
+      { "start": 23, "end": 32, "label": "SCREEN_SIZE" },
+      { "start": 40, "end": 49, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Saya cari laptop 13 inch yang ada touchscreen buat presentasi",
+    "entities": [
+      { "start": 15, "end": 23, "label": "SCREEN_SIZE" },
+      { "start": 34, "end": 45, "label": "TOUCHSCREEN" },
+      { "start": 51, "end": 62, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Acer RAM 4GB storage 512GB cukup untuk kuliah",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 12, "end": 20, "label": "RAM" },
+      { "start": 21, "end": 33, "label": "STORAGE" },
+      { "start": 45, "end": 51, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop kerja kantoran dengan RAM 8GB dan SSD 256GB",
+    "entities": [
+      { "start": 11, "end": 25, "label": "USAGE" },
+      { "start": 32, "end": 39, "label": "RAM" },
+      { "start": 44, "end": 54, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Saya ingin laptop gaming layar 15 inch budget 18 juta",
+    "entities": [
+      { "start": 11, "end": 17, "label": "USAGE" },
+      { "start": 24, "end": 33, "label": "SCREEN_SIZE" },
+      { "start": 34, "end": 47, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau Chromebook ringan untuk anak sekolah budget 5 juta",
+    "entities": [
+      { "start": 4, "end": 13, "label": "BRAND" },
+      { "start": 22, "end": 34, "label": "USAGE" },
+      { "start": 35, "end": 48, "label": "USAGE" },
+      { "start": 49, "end": 58, "label": "BUDGET" }
+    ]
+  },
+  {
     "text": "Saya cari Lenovo untuk editing video",
     "entities": [
       { "start": 10, "end": 16, "label": "BRAND" },
@@ -164,6 +312,1017 @@
     "entities": [
       { "start": 7, "end": 13, "label": "SCREEN_SIZE" },
       { "start": 21, "end": 27, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya mau laptop Asus RAM 16GB SSD 512GB buat gaming",
+    "entities": [
+      { "start": 16, "end": 20, "label": "BRAND" },
+      { "start": 21, "end": 29, "label": "RAM" },
+      { "start": 30, "end": 38, "label": "STORAGE" },
+      { "start": 44, "end": 50, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop Lenovo untuk kerja kantoran dengan budget 12 juta",
+    "entities": [
+      { "start": 12, "end": 18, "label": "BRAND" },
+      { "start": 25, "end": 31, "label": "USAGE" },
+      { "start": 48, "end": 56, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau laptop 14 inch RAM 8GB untuk kuliah",
+    "entities": [
+      { "start": 11, "end": 19, "label": "SCREEN_SIZE" },
+      { "start": 20, "end": 26, "label": "RAM" },
+      { "start": 33, "end": 39, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari laptop touchscreen untuk desain grafis",
+    "entities": [
+      { "start": 15, "end": 26, "label": "TOUCHSCREEN" },
+      { "start": 33, "end": 39, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh ultrabook tipis dengan storage 1TB buat kerja",
+    "entities": [
+      { "start": 33, "end": 36, "label": "STORAGE" },
+      { "start": 42, "end": 47, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop MSI RAM 16GB SSD 1TB cocok untuk gaming",
+    "entities": [
+      { "start": 7, "end": 10, "label": "BRAND" },
+      { "start": 11, "end": 19, "label": "RAM" },
+      { "start": 20, "end": 27, "label": "STORAGE" },
+      { "start": 38, "end": 44, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya punya budget sekitar 7 juta untuk laptop kuliah",
+    "entities": [
+      { "start": 12, "end": 29, "label": "BUDGET" },
+      { "start": 48, "end": 54, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Cari laptop HP layar 13 inch yang enak buat ngetik",
+    "entities": [
+      { "start": 11, "end": 13, "label": "BRAND" },
+      { "start": 20, "end": 29, "label": "SCREEN_SIZE" },
+      { "start": 45, "end": 51, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh Macbook untuk video editing dan desain",
+    "entities": [
+      { "start": 6, "end": 13, "label": "BRAND" },
+      { "start": 21, "end": 34, "label": "USAGE" },
+      { "start": 39, "end": 45, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop murah dengan RAM 4GB dan storage 256GB buat anak sekolah",
+    "entities": [
+      { "start": 19, "end": 26, "label": "RAM" },
+      { "start": 31, "end": 43, "label": "STORAGE" },
+      { "start": 49, "end": 61, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Rekomendasi laptop Lenovo RAM 8GB untuk mahasiswa",
+    "entities": [
+      { "start": 19, "end": 25, "label": "BRAND" },
+      { "start": 26, "end": 34, "label": "RAM" },
+      { "start": 41, "end": 50, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop tipis layar touchscreen 14 inch budget 11 juta",
+    "entities": [
+      { "start": 19, "end": 30, "label": "TOUCHSCREEN" },
+      { "start": 31, "end": 40, "label": "SCREEN_SIZE" },
+      { "start": 41, "end": 54, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Butuh notebook Dell dengan SSD 256GB untuk coding",
+    "entities": [
+      { "start": 15, "end": 19, "label": "BRAND" },
+      { "start": 27, "end": 35, "label": "STORAGE" },
+      { "start": 42, "end": 48, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Asus ROG RAM 32GB layar 17 inch untuk gaming",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 16, "end": 24, "label": "RAM" },
+      { "start": 25, "end": 38, "label": "SCREEN_SIZE" },
+      { "start": 45, "end": 51, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau laptop budget 6 juta sampai 8 juta untuk kuliah",
+    "entities": [
+      { "start": 11, "end": 39, "label": "BUDGET" },
+      { "start": 46, "end": 52, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Cari HP Pavilion SSD 512GB RAM 16GB buat kerja",
+    "entities": [
+      { "start": 5, "end": 7, "label": "BRAND" },
+      { "start": 17, "end": 25, "label": "STORAGE" },
+      { "start": 26, "end": 34, "label": "RAM" },
+      { "start": 40, "end": 45, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop ringan 13.3 inch untuk dibawa travelling",
+    "entities": [
+      { "start": 14, "end": 23, "label": "SCREEN_SIZE" },
+      { "start": 30, "end": 47, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya mau Acer Aspire dengan layar sentuh buat presentasi",
+    "entities": [
+      { "start": 9, "end": 13, "label": "BRAND" },
+      { "start": 28, "end": 40, "label": "TOUCHSCREEN" },
+      { "start": 46, "end": 57, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop MSI dengan budget maksimal 25 juta untuk gaming",
+    "entities": [
+      { "start": 12, "end": 15, "label": "BRAND" },
+      { "start": 23, "end": 44, "label": "BUDGET" },
+      { "start": 51, "end": 57, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop untuk rendering 3D dengan RAM 64GB dan SSD 2TB",
+    "entities": [
+      { "start": 13, "end": 25, "label": "USAGE" },
+      { "start": 33, "end": 41, "label": "RAM" },
+      { "start": 46, "end": 53, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Cari Lenovo Yoga touchscreen untuk desain UI UX",
+    "entities": [
+      { "start": 5, "end": 11, "label": "BRAND" },
+      { "start": 17, "end": 28, "label": "TOUCHSCREEN" },
+      { "start": 35, "end": 44, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Dell XPS 13 inch RAM 16GB untuk programming",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 16, "end": 23, "label": "SCREEN_SIZE" },
+      { "start": 24, "end": 32, "label": "RAM" },
+      { "start": 39, "end": 50, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Budget 13 jutaan untuk laptop editing video",
+    "entities": [
+      { "start": 0, "end": 15, "label": "BUDGET" },
+      { "start": 29, "end": 42, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari Macbook Pro 14 inch dengan budget 30 juta",
+    "entities": [
+      { "start": 10, "end": 17, "label": "BRAND" },
+      { "start": 22, "end": 30, "label": "SCREEN_SIZE" },
+      { "start": 38, "end": 47, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop murah RAM 4GB storage 128GB cukup untuk browsing",
+    "entities": [
+      { "start": 12, "end": 20, "label": "RAM" },
+      { "start": 21, "end": 34, "label": "STORAGE" },
+      { "start": 46, "end": 54, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh Asus Vivobook 15 inch untuk kerja dan kuliah",
+    "entities": [
+      { "start": 6, "end": 10, "label": "BRAND" },
+      { "start": 20, "end": 27, "label": "SCREEN_SIZE" },
+      { "start": 34, "end": 39, "label": "USAGE" },
+      { "start": 44, "end": 50, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop gaming MSI dengan layar 144Hz budget 20 juta",
+    "entities": [
+      { "start": 7, "end": 13, "label": "USAGE" },
+      { "start": 14, "end": 17, "label": "BRAND" },
+      { "start": 37, "end": 51, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau laptop Acer layar 14 inch SSD 1TB RAM 8GB",
+    "entities": [
+      { "start": 11, "end": 15, "label": "BRAND" },
+      { "start": 22, "end": 30, "label": "SCREEN_SIZE" },
+      { "start": 31, "end": 38, "label": "STORAGE" },
+      { "start": 39, "end": 46, "label": "RAM" }
+    ]
+  },
+  {
+    "text": "Laptop HP dengan touchscreen dan stylus untuk menggambar",
+    "entities": [
+      { "start": 7, "end": 9, "label": "BRAND" },
+      { "start": 17, "end": 28, "label": "TOUCHSCREEN" },
+      { "start": 45, "end": 56, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh notebook 13 inch ringan budget 9 jutaan untuk travelling",
+    "entities": [
+      { "start": 15, "end": 22, "label": "SCREEN_SIZE" },
+      { "start": 30, "end": 42, "label": "BUDGET" },
+      { "start": 49, "end": 59, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya pengen Lenovo Thinkpad RAM 16GB untuk programming Python",
+    "entities": [
+      { "start": 12, "end": 18, "label": "BRAND" },
+      { "start": 29, "end": 37, "label": "RAM" },
+      { "start": 44, "end": 56, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Asus TUF RAM 32GB SSD 512GB layar 15.6 inch gaming",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 16, "end": 24, "label": "RAM" },
+      { "start": 25, "end": 34, "label": "STORAGE" },
+      { "start": 35, "end": 50, "label": "SCREEN_SIZE" },
+      { "start": 51, "end": 57, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Cari Dell Inspiron storage 256GB untuk anak SMA",
+    "entities": [
+      { "start": 5, "end": 9, "label": "BRAND" },
+      { "start": 19, "end": 32, "label": "STORAGE" },
+      { "start": 39, "end": 47, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Budget saya 7 juta mau laptop buat coding",
+    "entities": [
+      { "start": 7, "end": 19, "label": "BUDGET" },
+      { "start": 32, "end": 38, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop MSI GF63 layar 15 inch RAM 8GB untuk main game",
+    "entities": [
+      { "start": 7, "end": 10, "label": "BRAND" },
+      { "start": 22, "end": 29, "label": "SCREEN_SIZE" },
+      { "start": 30, "end": 37, "label": "RAM" },
+      { "start": 44, "end": 48, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau Macbook Air 13 inch SSD 512GB untuk kerja mobile",
+    "entities": [
+      { "start": 4, "end": 11, "label": "BRAND" },
+      { "start": 16, "end": 23, "label": "SCREEN_SIZE" },
+      { "start": 24, "end": 33, "label": "STORAGE" },
+      { "start": 40, "end": 46, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop Acer Swift RAM 16GB budget 10 juta",
+    "entities": [
+      { "start": 12, "end": 16, "label": "BRAND" },
+      { "start": 23, "end": 31, "label": "RAM" },
+      { "start": 32, "end": 47, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop untuk video editing RAM 32GB SSD 1TB",
+    "entities": [
+      { "start": 13, "end": 27, "label": "USAGE" },
+      { "start": 28, "end": 36, "label": "RAM" },
+      { "start": 37, "end": 44, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari HP Envy touchscreen 14 inch untuk desain",
+    "entities": [
+      { "start": 10, "end": 12, "label": "BRAND" },
+      { "start": 18, "end": 29, "label": "TOUCHSCREEN" },
+      { "start": 30, "end": 39, "label": "SCREEN_SIZE" },
+      { "start": 46, "end": 52, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Lenovo IdeaPad layar 15.6 inch RAM 4GB untuk kuliah",
+    "entities": [
+      { "start": 7, "end": 13, "label": "BRAND" },
+      { "start": 28, "end": 38, "label": "SCREEN_SIZE" },
+      { "start": 39, "end": 46, "label": "RAM" },
+      { "start": 53, "end": 59, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Budget maksimal 16 juta untuk laptop gaming RTX",
+    "entities": [
+      { "start": 7, "end": 26, "label": "BUDGET" },
+      { "start": 33, "end": 39, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau Dell Latitude RAM 8GB storage 512GB untuk kerja kantoran",
+    "entities": [
+      { "start": 4, "end": 8, "label": "BRAND" },
+      { "start": 18, "end": 25, "label": "RAM" },
+      { "start": 26, "end": 39, "label": "STORAGE" },
+      { "start": 46, "end": 60, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Asus 17 inch RAM 16GB SSD 1TB untuk gaming berat",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 12, "end": 19, "label": "SCREEN_SIZE" },
+      { "start": 20, "end": 28, "label": "RAM" },
+      { "start": 29, "end": 36, "label": "STORAGE" },
+      { "start": 43, "end": 49, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya butuh laptop 2-in-1 touchscreen untuk presentasi klien",
+    "entities": [
+      { "start": 25, "end": 36, "label": "TOUCHSCREEN" },
+      { "start": 43, "end": 54, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Cari laptop murah Acer budget 5 juta untuk browsing saja",
+    "entities": [
+      { "start": 18, "end": 22, "label": "BRAND" },
+      { "start": 23, "end": 37, "label": "BUDGET" },
+      { "start": 44, "end": 52, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop HP Omen RAM 32GB untuk streaming dan gaming",
+    "entities": [
+      { "start": 7, "end": 9, "label": "BRAND" },
+      { "start": 15, "end": 23, "label": "RAM" },
+      { "start": 30, "end": 39, "label": "USAGE" },
+      { "start": 44, "end": 50, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh Lenovo Legion 15 inch SSD 1TB budget 22 juta",
+    "entities": [
+      { "start": 6, "end": 12, "label": "BRAND" },
+      { "start": 20, "end": 27, "label": "SCREEN_SIZE" },
+      { "start": 28, "end": 35, "label": "STORAGE" },
+      { "start": 36, "end": 51, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop ringan 14 inch RAM 8GB untuk kerja WFH",
+    "entities": [
+      { "start": 14, "end": 21, "label": "SCREEN_SIZE" },
+      { "start": 22, "end": 29, "label": "RAM" },
+      { "start": 36, "end": 41, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau MSI Prestige touchscreen untuk desain grafis dan editing",
+    "entities": [
+      { "start": 4, "end": 7, "label": "BRAND" },
+      { "start": 17, "end": 28, "label": "TOUCHSCREEN" },
+      { "start": 35, "end": 48, "label": "USAGE" },
+      { "start": 53, "end": 60, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Dell G15 RAM 16GB layar 15.6 inch gaming",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 16, "end": 24, "label": "RAM" },
+      { "start": 25, "end": 40, "label": "SCREEN_SIZE" },
+      { "start": 41, "end": 47, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari laptop budget 12 jutaan SSD 512GB untuk programming web",
+    "entities": [
+      { "start": 17, "end": 30, "label": "BUDGET" },
+      { "start": 31, "end": 39, "label": "STORAGE" },
+      { "start": 46, "end": 62, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Asus ZenBook 13 inch tipis untuk travelling",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 20, "end": 27, "label": "SCREEN_SIZE" },
+      { "start": 40, "end": 50, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh Macbook Pro M2 RAM 16GB untuk editing video 4K",
+    "entities": [
+      { "start": 6, "end": 13, "label": "BRAND" },
+      { "start": 21, "end": 29, "label": "RAM" },
+      { "start": 36, "end": 49, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Acer Nitro 15.6 inch RAM 8GB untuk gaming casual",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 18, "end": 27, "label": "SCREEN_SIZE" },
+      { "start": 28, "end": 35, "label": "RAM" },
+      { "start": 42, "end": 48, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Cari HP ProBook 14 inch untuk kerja kantoran budget 11 juta",
+    "entities": [
+      { "start": 5, "end": 7, "label": "BRAND" },
+      { "start": 17, "end": 24, "label": "SCREEN_SIZE" },
+      { "start": 31, "end": 45, "label": "USAGE" },
+      { "start": 46, "end": 60, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop untuk data science RAM 32GB SSD 1TB",
+    "entities": [
+      { "start": 13, "end": 25, "label": "USAGE" },
+      { "start": 26, "end": 34, "label": "RAM" },
+      { "start": 35, "end": 42, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Saya mau Lenovo Yoga Slim touchscreen 14 inch untuk meeting",
+    "entities": [
+      { "start": 9, "end": 15, "label": "BRAND" },
+      { "start": 26, "end": 37, "label": "TOUCHSCREEN" },
+      { "start": 38, "end": 47, "label": "SCREEN_SIZE" },
+      { "start": 54, "end": 61, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop MSI Bravo RAM 16GB budget 18 juta untuk gaming",
+    "entities": [
+      { "start": 7, "end": 10, "label": "BRAND" },
+      { "start": 17, "end": 25, "label": "RAM" },
+      { "start": 26, "end": 41, "label": "BUDGET" },
+      { "start": 48, "end": 54, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh Dell XPS touchscreen 13.4 inch untuk desain UI",
+    "entities": [
+      { "start": 6, "end": 10, "label": "BRAND" },
+      { "start": 15, "end": 26, "label": "TOUCHSCREEN" },
+      { "start": 27, "end": 36, "label": "SCREEN_SIZE" },
+      { "start": 43, "end": 52, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop ringan Asus 14 inch RAM 8GB SSD 256GB kuliah",
+    "entities": [
+      { "start": 14, "end": 18, "label": "BRAND" },
+      { "start": 19, "end": 26, "label": "SCREEN_SIZE" },
+      { "start": 27, "end": 34, "label": "RAM" },
+      { "start": 35, "end": 44, "label": "STORAGE" },
+      { "start": 45, "end": 51, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau laptop HP budget 8 jutaan storage 512GB untuk coding",
+    "entities": [
+      { "start": 11, "end": 13, "label": "BRAND" },
+      { "start": 14, "end": 30, "label": "BUDGET" },
+      { "start": 31, "end": 43, "label": "STORAGE" },
+      { "start": 50, "end": 56, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Acer 15 inch RAM 4GB untuk anak sekolah budget 6 juta",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 12, "end": 19, "label": "SCREEN_SIZE" },
+      { "start": 20, "end": 27, "label": "RAM" },
+      { "start": 34, "end": 46, "label": "USAGE" },
+      { "start": 47, "end": 61, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Saya butuh Lenovo 14 inch SSD 1TB RAM 16GB untuk kerja",
+    "entities": [
+      { "start": 11, "end": 17, "label": "BRAND" },
+      { "start": 18, "end": 25, "label": "SCREEN_SIZE" },
+      { "start": 26, "end": 33, "label": "STORAGE" },
+      { "start": 34, "end": 42, "label": "RAM" },
+      { "start": 49, "end": 54, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop gaming MSI Delta RAM 32GB layar 17 inch",
+    "entities": [
+      { "start": 7, "end": 13, "label": "USAGE" },
+      { "start": 14, "end": 17, "label": "BRAND" },
+      { "start": 24, "end": 32, "label": "RAM" },
+      { "start": 33, "end": 46, "label": "SCREEN_SIZE" }
+    ]
+  },
+  {
+    "text": "Cari laptop Dell dengan touchscreen untuk presentasi budget 14 juta",
+    "entities": [
+      { "start": 12, "end": 16, "label": "BRAND" },
+      { "start": 24, "end": 35, "label": "TOUCHSCREEN" },
+      { "start": 42, "end": 53, "label": "USAGE" },
+      { "start": 54, "end": 68, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop Asus ROG Strix 15 inch RAM 16GB SSD 512GB gaming",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 22, "end": 29, "label": "SCREEN_SIZE" },
+      { "start": 30, "end": 38, "label": "RAM" },
+      { "start": 39, "end": 48, "label": "STORAGE" },
+      { "start": 49, "end": 55, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh notebook 13 inch RAM 8GB budget 10 juta coding",
+    "entities": [
+      { "start": 15, "end": 22, "label": "SCREEN_SIZE" },
+      { "start": 23, "end": 30, "label": "RAM" },
+      { "start": 31, "end": 45, "label": "BUDGET" },
+      { "start": 46, "end": 52, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop HP Spectre touchscreen 13.5 inch SSD 1TB",
+    "entities": [
+      { "start": 7, "end": 9, "label": "BRAND" },
+      { "start": 18, "end": 29, "label": "TOUCHSCREEN" },
+      { "start": 30, "end": 39, "label": "SCREEN_SIZE" },
+      { "start": 40, "end": 47, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Mau Macbook Air M2 13 inch untuk kerja mobile",
+    "entities": [
+      { "start": 4, "end": 11, "label": "BRAND" },
+      { "start": 19, "end": 26, "label": "SCREEN_SIZE" },
+      { "start": 33, "end": 38, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Lenovo ThinkBook RAM 16GB storage 512GB untuk bisnis",
+    "entities": [
+      { "start": 7, "end": 13, "label": "BRAND" },
+      { "start": 24, "end": 32, "label": "RAM" },
+      { "start": 33, "end": 46, "label": "STORAGE" },
+      { "start": 53, "end": 59, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari Acer Predator 17 inch RAM 32GB untuk gaming AAA",
+    "entities": [
+      { "start": 10, "end": 14, "label": "BRAND" },
+      { "start": 24, "end": 31, "label": "SCREEN_SIZE" },
+      { "start": 32, "end": 40, "label": "RAM" },
+      { "start": 47, "end": 53, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Dell Vostro 14 inch untuk kantor budget 9 juta",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 19, "end": 26, "label": "SCREEN_SIZE" },
+      { "start": 33, "end": 39, "label": "USAGE" },
+      { "start": 40, "end": 54, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Butuh laptop gaming budget 15 juta RAM 16GB SSD 1TB",
+    "entities": [
+      { "start": 13, "end": 19, "label": "USAGE" },
+      { "start": 20, "end": 35, "label": "BUDGET" },
+      { "start": 36, "end": 44, "label": "RAM" },
+      { "start": 45, "end": 52, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Asus Vivobook Pro 15 inch touchscreen untuk desain",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 25, "end": 32, "label": "SCREEN_SIZE" },
+      { "start": 33, "end": 44, "label": "TOUCHSCREEN" },
+      { "start": 51, "end": 57, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau laptop HP 14 inch RAM 8GB SSD 256GB untuk mahasiswa",
+    "entities": [
+      { "start": 11, "end": 13, "label": "BRAND" },
+      { "start": 14, "end": 21, "label": "SCREEN_SIZE" },
+      { "start": 22, "end": 29, "label": "RAM" },
+      { "start": 30, "end": 39, "label": "STORAGE" },
+      { "start": 46, "end": 55, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop MSI Modern RAM 16GB layar 14 inch untuk kerja",
+    "entities": [
+      { "start": 7, "end": 10, "label": "BRAND" },
+      { "start": 18, "end": 26, "label": "RAM" },
+      { "start": 27, "end": 40, "label": "SCREEN_SIZE" },
+      { "start": 47, "end": 52, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Cari Lenovo IdeaPad Slim touchscreen budget 12 juta",
+    "entities": [
+      { "start": 5, "end": 11, "label": "BRAND" },
+      { "start": 25, "end": 36, "label": "TOUCHSCREEN" },
+      { "start": 37, "end": 52, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop untuk machine learning RAM 64GB SSD 2TB",
+    "entities": [
+      { "start": 13, "end": 29, "label": "USAGE" },
+      { "start": 30, "end": 38, "label": "RAM" },
+      { "start": 39, "end": 46, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Saya butuh Dell Inspiron 15 inch RAM 4GB untuk kuliah online",
+    "entities": [
+      { "start": 11, "end": 15, "label": "BRAND" },
+      { "start": 25, "end": 32, "label": "SCREEN_SIZE" },
+      { "start": 33, "end": 40, "label": "RAM" },
+      { "start": 47, "end": 60, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Asus 13 inch tipis RAM 8GB budget 8 juta",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 12, "end": 19, "label": "SCREEN_SIZE" },
+      { "start": 26, "end": 33, "label": "RAM" },
+      { "start": 34, "end": 48, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Butuh Macbook Pro 16 inch RAM 32GB untuk editing film",
+    "entities": [
+      { "start": 6, "end": 13, "label": "BRAND" },
+      { "start": 18, "end": 25, "label": "SCREEN_SIZE" },
+      { "start": 26, "end": 34, "label": "RAM" },
+      { "start": 41, "end": 53, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Acer TravelMate 14 inch untuk sales budget 7 jutaan",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 24, "end": 31, "label": "SCREEN_SIZE" },
+      { "start": 38, "end": 43, "label": "USAGE" },
+      { "start": 44, "end": 59, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau HP Elite RAM 16GB SSD 512GB touchscreen untuk bisnis",
+    "entities": [
+      { "start": 4, "end": 6, "label": "BRAND" },
+      { "start": 12, "end": 20, "label": "RAM" },
+      { "start": 21, "end": 30, "label": "STORAGE" },
+      { "start": 31, "end": 42, "label": "TOUCHSCREEN" },
+      { "start": 49, "end": 55, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop gaming Lenovo Legion 15 inch budget 19 juta",
+    "entities": [
+      { "start": 7, "end": 13, "label": "USAGE" },
+      { "start": 14, "end": 20, "label": "BRAND" },
+      { "start": 28, "end": 35, "label": "SCREEN_SIZE" },
+      { "start": 36, "end": 51, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Saya cari laptop 17 inch RAM 32GB SSD 1TB untuk rendering",
+    "entities": [
+      { "start": 14, "end": 21, "label": "SCREEN_SIZE" },
+      { "start": 22, "end": 30, "label": "RAM" },
+      { "start": 31, "end": 38, "label": "STORAGE" },
+      { "start": 45, "end": 54, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Dell dengan layar sentuh 13 inch budget 13 juta",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 19, "end": 31, "label": "TOUCHSCREEN" },
+      { "start": 32, "end": 39, "label": "SCREEN_SIZE" },
+      { "start": 40, "end": 55, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Butuh Asus TUF Gaming 15.6 inch RAM 16GB untuk esports",
+    "entities": [
+      { "start": 6, "end": 10, "label": "BRAND" },
+      { "start": 22, "end": 31, "label": "SCREEN_SIZE" },
+      { "start": 32, "end": 40, "label": "RAM" },
+      { "start": 47, "end": 54, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop MSI Creator RAM 32GB SSD 2TB untuk content creator",
+    "entities": [
+      { "start": 7, "end": 10, "label": "BRAND" },
+      { "start": 19, "end": 27, "label": "RAM" },
+      { "start": 28, "end": 35, "label": "STORAGE" },
+      { "start": 42, "end": 57, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop touchscreen Asus Zenbook budget 17 juta",
+    "entities": [
+      { "start": 7, "end": 18, "label": "TOUCHSCREEN" },
+      { "start": 19, "end": 23, "label": "BRAND" },
+      { "start": 32, "end": 47, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Butuh laptop dengan layar sentuh storage 1TB budget 16 jutaan",
+    "entities": [
+      { "start": 20, "end": 32, "label": "TOUCHSCREEN" },
+      { "start": 33, "end": 44, "label": "STORAGE" },
+      { "start": 45, "end": 62, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Saya cari laptop HDD 1TB dan SSD 256GB untuk backup data",
+    "entities": [
+      { "start": 17, "end": 24, "label": "STORAGE" },
+      { "start": 29, "end": 38, "label": "STORAGE" },
+      { "start": 45, "end": 56, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Lenovo dengan touchscreen budget 11 jutaan",
+    "entities": [
+      { "start": 7, "end": 13, "label": "BRAND" },
+      { "start": 21, "end": 32, "label": "TOUCHSCREEN" },
+      { "start": 33, "end": 50, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau laptop storage 2TB untuk simpan video budget 14 juta",
+    "entities": [
+      { "start": 11, "end": 22, "label": "STORAGE" },
+      { "start": 29, "end": 40, "label": "USAGE" },
+      { "start": 41, "end": 57, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop HP dengan layar touchscreen untuk desain budget 15 juta",
+    "entities": [
+      { "start": 7, "end": 9, "label": "BRAND" },
+      { "start": 17, "end": 34, "label": "TOUCHSCREEN" },
+      { "start": 41, "end": 47, "label": "USAGE" },
+      { "start": 48, "end": 63, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Butuh laptop Dell touchscreen stylus RAM 16GB storage 512GB",
+    "entities": [
+      { "start": 12, "end": 16, "label": "BRAND" },
+      { "start": 17, "end": 28, "label": "TOUCHSCREEN" },
+      { "start": 37, "end": 45, "label": "RAM" },
+      { "start": 46, "end": 60, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Laptop dengan SSD 1TB HDD 2TB untuk video editing",
+    "entities": [
+      { "start": 14, "end": 21, "label": "STORAGE" },
+      { "start": 22, "end": 29, "label": "STORAGE" },
+      { "start": 36, "end": 49, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya mau Acer 2-in-1 touchscreen budget 13 juta untuk meeting",
+    "entities": [
+      { "start": 9, "end": 13, "label": "BRAND" },
+      { "start": 21, "end": 32, "label": "TOUCHSCREEN" },
+      { "start": 33, "end": 48, "label": "BUDGET" },
+      { "start": 55, "end": 62, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Laptop budget 20 jutaan storage 1TB RAM 32GB gaming",
+    "entities": [
+      { "start": 7, "end": 24, "label": "BUDGET" },
+      { "start": 25, "end": 38, "label": "STORAGE" },
+      { "start": 39, "end": 47, "label": "RAM" },
+      { "start": 48, "end": 54, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Mau laptop MSI dengan layar sentuh budget 19 juta",
+    "entities": [
+      { "start": 11, "end": 14, "label": "BRAND" },
+      { "start": 22, "end": 34, "label": "TOUCHSCREEN" },
+      { "start": 35, "end": 50, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop Asus storage 512GB SSD budget maksimal 12 juta",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 12, "end": 29, "label": "STORAGE" },
+      { "start": 30, "end": 54, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Butuh laptop touchscreen untuk anak sekolah budget 8 juta",
+    "entities": [
+      { "start": 12, "end": 23, "label": "TOUCHSCREEN" },
+      { "start": 30, "end": 42, "label": "USAGE" },
+      { "start": 43, "end": 58, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop HP Envy 2-in-1 touchscreen storage 256GB",
+    "entities": [
+      { "start": 7, "end": 9, "label": "BRAND" },
+      { "start": 22, "end": 33, "label": "TOUCHSCREEN" },
+      { "start": 34, "end": 48, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari laptop budget 9 sampai 12 juta SSD 512GB",
+    "entities": [
+      { "start": 17, "end": 37, "label": "BUDGET" },
+      { "start": 38, "end": 47, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Laptop Lenovo Yoga convertible touchscreen untuk presentasi",
+    "entities": [
+      { "start": 7, "end": 13, "label": "BRAND" },
+      { "start": 31, "end": 42, "label": "TOUCHSCREEN" },
+      { "start": 49, "end": 60, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop Dell layar sentuh budget 16 juta SSD 1TB",
+    "entities": [
+      { "start": 12, "end": 16, "label": "BRAND" },
+      { "start": 17, "end": 29, "label": "TOUCHSCREEN" },
+      { "start": 30, "end": 45, "label": "BUDGET" },
+      { "start": 46, "end": 54, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Laptop gaming storage 2TB HDD dan 512GB SSD budget 22 juta",
+    "entities": [
+      { "start": 7, "end": 13, "label": "USAGE" },
+      { "start": 14, "end": 25, "label": "STORAGE" },
+      { "start": 30, "end": 43, "label": "STORAGE" },
+      { "start": 44, "end": 59, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau Asus Vivobook Flip touchscreen budget 10 juta",
+    "entities": [
+      { "start": 4, "end": 8, "label": "BRAND" },
+      { "start": 23, "end": 34, "label": "TOUCHSCREEN" },
+      { "start": 35, "end": 50, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop Acer dengan storage HDD 1TB untuk arsip budget 6 juta",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 19, "end": 34, "label": "STORAGE" },
+      { "start": 41, "end": 47, "label": "USAGE" },
+      { "start": 48, "end": 61, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Saya butuh laptop touchscreen pen support SSD 256GB",
+    "entities": [
+      { "start": 16, "end": 27, "label": "TOUCHSCREEN" },
+      { "start": 42, "end": 51, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Laptop HP touchscreen 13 inch budget 14 jutaan untuk desain",
+    "entities": [
+      { "start": 7, "end": 9, "label": "BRAND" },
+      { "start": 10, "end": 21, "label": "TOUCHSCREEN" },
+      { "start": 22, "end": 29, "label": "SCREEN_SIZE" },
+      { "start": 30, "end": 47, "label": "BUDGET" },
+      { "start": 54, "end": 60, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop storage 1TB SSD RAM 16GB budget 18 juta",
+    "entities": [
+      { "start": 12, "end": 24, "label": "STORAGE" },
+      { "start": 29, "end": 37, "label": "RAM" },
+      { "start": 38, "end": 53, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop Lenovo IdeaPad Flex touchscreen budget maksimal 11 juta",
+    "entities": [
+      { "start": 7, "end": 13, "label": "BRAND" },
+      { "start": 27, "end": 38, "label": "TOUCHSCREEN" },
+      { "start": 39, "end": 63, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Mau laptop Dell 2-in-1 layar sentuh storage 512GB",
+    "entities": [
+      { "start": 11, "end": 15, "label": "BRAND" },
+      { "start": 23, "end": 35, "label": "TOUCHSCREEN" },
+      { "start": 36, "end": 50, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Laptop budget 5 juta storage 256GB untuk kuliah",
+    "entities": [
+      { "start": 7, "end": 21, "label": "BUDGET" },
+      { "start": 22, "end": 34, "label": "STORAGE" },
+      { "start": 41, "end": 47, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari MSI touchscreen stylus untuk digital art budget 21 juta",
+    "entities": [
+      { "start": 10, "end": 13, "label": "BRAND" },
+      { "start": 14, "end": 25, "label": "TOUCHSCREEN" },
+      { "start": 40, "end": 51, "label": "USAGE" },
+      { "start": 52, "end": 66, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop Asus dengan layar touchscreen SSD 1TB HDD 2TB",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 19, "end": 36, "label": "TOUCHSCREEN" },
+      { "start": 37, "end": 44, "label": "STORAGE" },
+      { "start": 45, "end": 52, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Butuh laptop HP touchscreen RAM 8GB budget 9 jutaan",
+    "entities": [
+      { "start": 12, "end": 14, "label": "BRAND" },
+      { "start": 15, "end": 26, "label": "TOUCHSCREEN" },
+      { "start": 27, "end": 34, "label": "RAM" },
+      { "start": 35, "end": 51, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Laptop Acer Spin touchscreen 14 inch storage 512GB",
+    "entities": [
+      { "start": 7, "end": 11, "label": "BRAND" },
+      { "start": 17, "end": 28, "label": "TOUCHSCREEN" },
+      { "start": 29, "end": 36, "label": "SCREEN_SIZE" },
+      { "start": 37, "end": 51, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Mau laptop convertible touchscreen budget 17 jutaan SSD 1TB",
+    "entities": [
+      { "start": 23, "end": 34, "label": "TOUCHSCREEN" },
+      { "start": 35, "end": 52, "label": "BUDGET" },
+      { "start": 53, "end": 60, "label": "STORAGE" }
     ]
   }
 ]
