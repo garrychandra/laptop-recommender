@@ -1,23 +1,222 @@
 [
-  { "text": "Halo", "intent": "greeting" },
-  { "text": "Hai", "intent": "greeting" },
-  { "text": "Selamat pagi", "intent": "greeting" },
-  { "text": "Selamat malam", "intent": "greeting" },
-  { "text": "Permisi", "intent": "greeting" },
-
-  { "text": "Saya butuh rekomendasi laptop", "intent": "ask_recommendation" },
-  { "text": "Laptop apa yang bagus untuk gaming?", "intent": "ask_recommendation" },
-  { "text": "Ada saran laptop murah untuk kuliah?", "intent": "ask_recommendation" },
-  { "text": "Rekomendasi laptop editing video dong", "intent": "ask_recommendation" },
-  { "text": "Saya bingung pilih laptop mana", "intent": "ask_recommendation" },
-
-  { "text": "Terima kasih", "intent": "goodbye" },
-  { "text": "Makasih ya", "intent": "goodbye" },
-  { "text": "Sudah ya, dadah", "intent": "goodbye" },
-  { "text": "Sampai jumpa", "intent": "goodbye" },
-  { "text": "Bye", "intent": "goodbye" },
-
-  { "text": "????", "intent": "fallback" },
-  { "text": "Apa sih ini", "intent": "fallback" },
-  { "text": "Saya tidak paham", "intent": "fallback" },
+  {
+    "text": "Assalamualaikum",
+    "label": "greeting"
+  },
+  {
+    "text": "Sore min",
+    "label": "greeting"
+  },
+  {
+    "text": "Halo",
+    "label": "greeting"
+  },
+  {
+    "text": "Hi",
+    "label": "greeting"
+  },
+  {
+    "text": "Selamat malam",
+    "label": "greeting"
+  },
+  {
+    "text": "Selamat pagi",
+    "label": "greeting"
+  },
+  {
+    "text": "Halo admin",
+    "label": "greeting"
+  },
+  {
+    "text": "Punten",
+    "label": "greeting"
+  },
+  {
+    "text": "P",
+    "label": "greeting"
+  },
+  {
+    "text": "Permisi",
+    "label": "greeting"
+  },
+  {
+    "text": "Aku mau laptop untuk gaming",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Ada rekomendasi laptop 10 jutaan?",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Cari laptop buat coding dan programming",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Laptop yang kuat buat render 3D apa ya?",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Saran laptop buat desain grafis dong",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Laptop buat anak sekolah SD",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Saya bingung pilih laptop mana",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Spill laptop harga pelajar dong",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Spesifikasi Asus TUF gimana?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "RAM-nya ada berapa?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Spek lengkapnya apa?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Prosesornya pakai apa?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Penyimpanannya sudah SSD belum?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Layarnya berapa inch?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "VGA-nya seri berapa?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Ada slot tambahan RAM gak?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Berapa harga Lenovo Legion?",
+    "label": "ask_price"
+  },
+  {
+    "text": "Harganya berapa?",
+    "label": "ask_price"
+  },
+  {
+    "text": "Cek harga Asus ROG sekarang",
+    "label": "ask_price"
+  },
+  {
+    "text": "Kalau yang ini harganya brp?",
+    "label": "ask_price"
+  },
+  {
+    "text": "Budget berapa buat beli ini?",
+    "label": "ask_price"
+  },
+  {
+    "text": "Mending Acer Nitro atau Asus TUF?",
+    "label": "compare_laptops"
+  },
+  {
+    "text": "Bagusan mana Lenovo vs HP?",
+    "label": "compare_laptops"
+  },
+  {
+    "text": "Bedanya apa sama tipe sebelumnya?",
+    "label": "compare_laptops"
+  },
+  {
+    "text": "Lebih worth it mana sama Macbook Air?",
+    "label": "compare_laptops"
+  },
+  {
+    "text": "Aku butuh yang ringan dan baterainya lama",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Tapi saya mau yang warnanya hitam",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Yang penting bisa buat render video lancar",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Jangan yang berat-berat, soalnya buat mobile",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Carikan yang layarnya OLED",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Harus ada numpad-nya ya",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Terima kasih",
+    "label": "goodbye"
+  },
+  {
+    "text": "Bye",
+    "label": "goodbye"
+  },
+  {
+    "text": "Oke, thanks infonya",
+    "label": "goodbye"
+  },
+  {
+    "text": "Siap, makasih banyak",
+    "label": "goodbye"
+  },
+  {
+    "text": "Oke fix saya beli itu",
+    "label": "goodbye"
+  },
+  {
+    "text": "Cukup, itu saja",
+    "label": "goodbye"
+  },
+  {
+    "text": "Jual kulkas gak?",
+    "label": "fallback"
+  },
+  {
+    "text": "Harga beras berapa?",
+    "label": "fallback"
+  },
+  {
+    "text": "Cara masak nasi goreng",
+    "label": "fallback"
+  },
+  {
+    "text": "asdfghjkl",
+    "label": "fallback"
+  },
+  {
+    "text": "Siapa presiden Indonesia?",
+    "label": "fallback"
+  },
+  {
+    "text": "Service AC dimana?",
+    "label": "fallback"
+  },
+  {
+    "text": "...",
+    "label": "fallback"
+  },
+  {
+    "text": "Saya lapar",
+    "label": "fallback"
+  }
 ]

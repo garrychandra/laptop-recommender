@@ -7,6 +7,10 @@ import evaluate
 DATA_PATH = os.path.join("data", "ner_id.json")
 dataset = load_dataset("json", data_files=DATA_PATH)
 
+# Split dataset: 80% train, 20% test
+dataset = dataset["train"].train_test_split(test_size=0.2, seed=42)
+print(f"Train size: {len(dataset['train'])}, Test size: {len(dataset['test'])}")
+
 tokenizer = AutoTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
 
 label_list = ["O", "B-BRAND", "I-BRAND", "B-RAM", "I-RAM", "B-STORAGE", "I-STORAGE", 
@@ -97,7 +101,7 @@ trainer = Trainer(
     model=model,
     args=args,
     train_dataset=tokenized_datasets["train"],
-    eval_dataset=tokenized_datasets["train"],
+    eval_dataset=tokenized_datasets["test"],
     tokenizer=tokenizer,
     data_collator=data_collator,
     compute_metrics=compute_metrics
@@ -106,3 +110,15 @@ trainer = Trainer(
 trainer.train()
 trainer.save_model("models/indobert_ner")
 tokenizer.save_pretrained("models/indobert_ner")
+
+# Evaluate on test set and print results
+print("\n" + "="*80)
+print("FINAL TEST SET EVALUATION")
+print("="*80)
+test_results = trainer.evaluate(eval_dataset=tokenized_datasets["test"])
+print(f"\nTest Results:")
+print(f"  Loss: {test_results['eval_loss']:.4f}")
+print(f"  Precision: {test_results['eval_precision']*100:.2f}%")
+print(f"  Recall: {test_results['eval_recall']*100:.2f}%")
+print(f"  F1 Score: {test_results['eval_f1']*100:.2f}%")
+print("="*80)

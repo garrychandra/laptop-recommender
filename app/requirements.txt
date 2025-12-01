@@ -9,3 +9,5 @@ jupyter
 ipython
 matplotlib
 seaborn
+evaluate
+datasets

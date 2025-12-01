@@ -1,6 +1,42 @@
 from app.recommender import load_data, recommend
 from app.nlp_pipeline import predict_intent, predict_entities
 import re
+import string
+import sys
+
+# ==========================================
+# PREPROCESSING FUNCTION
+# ==========================================
+def preprocess_text(text):
+    text = text.lower() # Lowercasing
+
+    # Remove URLs
+    text = re.sub(r'http\S+|www.\S+', '', text)
+
+    # Remove emojis (basic pattern)
+    emoji_pattern = re.compile("["
+                           "\U0001F600-\U0001F64F"  # emoticons
+                           "\U0001F300-\U0001F5FF"  # symbols & pictographs
+                           "\U0001F680-\U0001F6FF"  # transport & map symbols
+                           "\U0001F1E0-\U0001F1FF"  # flags (iOS)
+                           "\U00002702-\U000027B0"
+                           "\U000024C2-\U0001F251"
+                           "]+", flags=re.UNICODE)
+    text = emoji_pattern.sub(r'', text)
+
+    # Remove special characters (punctuation and other non-alphanumeric except space)
+    text = text.translate(str.maketrans('', '', string.punctuation))
+    text = re.sub(r'[^a-zA-Z0-9\s]', '', text) # Remove any remaining non-alphanumeric chars not covered by string.punctuation
+
+    # Remove extra whitespaces
+    text = re.sub(r'\s+', ' ', text).strip()
+
+    return text
+
+def format_idr(usd_price):
+    """Format harga USD ke Rupiah"""
+    idr_price = usd_price * 16000
+    return f"Rp {idr_price:,.0f}".replace(",", ".")
 
 df = load_data()
 
@@ -73,14 +109,16 @@ def extract_params(text: str, entities: dict):
 
 def chatbot_reply(user_text: str):
     intent = predict_intent(user_text)
-
-    if intent == "greeting":
-        return "Halo! Apa kebutuhan laptop Anda?"
-
     if intent == "goodbye":
-        return "Terima kasih! Sampai jumpa 👋"
+        return("Terima kasih! Semoga harimu menyenangkan. 👋")
 
-    if intent == "ask_recommendation":
+    elif intent == "greeting":
+        return("Halo! Ada yang bisa saya bantu? Mau cari laptop jenis apa?")
+
+    elif intent == "fallback":
+        return("Maaf, saya kurang mengerti. Bisa jelaskan lebih detail spesifikasi laptop yang dicari?")
+
+    elif intent == "ask_recommendation":
         # Extract entities and parameters
         entities = predict_entities(user_text)
         params = extract_params(user_text, entities)
@@ -95,13 +133,65 @@ def chatbot_reply(user_text: str):
         results = format_results(results)
         return "Berikut rekomendasi laptop:\n" + results.to_string(index=False)
 
-    return "Maaf, saya belum mengerti maksud Anda."
+    # --- PERBAIKAN LOGIKA ASK_SPECS ---
+    elif intent == "ask_specs":
+        # Regex diperketat: Wajib menangkap kata setelah 'spesifikasi' atau sebelum 'gimana'
+        match = re.search(r'(?:spesifikasi|spek)\s+([\w\s]+)|([\w\s]+?)\s+(?:gimana|speknya|itu)', raw_user_input, re.IGNORECASE)
 
+        laptop_name = None
+        if match:
+            # Ambil group yang tidak None
+            laptop_name = match.group(1) if match.group(1) else match.group(2)
+
+        # Cek validitas nama laptop (minimal 3 huruf agar tidak asal tebak)
+        if laptop_name and len(laptop_name.strip()) > 2:
+            filtered_laptop = df[df['Laptop'].str.contains(laptop_name.strip(), case=False, na=False)]
+
+            if not filtered_laptop.empty:
+                row = filtered_laptop.iloc[0]
+                return(f"Spesifikasi {row['Brand']} {row['Model']}:")
+                return(f"   • CPU: {row['CPU']}")
+                return(f"   • RAM: {row['RAM']}GB | Storage: {row['Storage']}GB")
+                return(f"   • GPU: {row['GPU']}")
+            else:
+                return(f"Maaf, saya tidak menemukan laptop bernama '{laptop_name}'.")
+        else:
+            # Jika intent terdeteksi ask_specs tapi tidak ada nama laptop
+            return("Laptop merk apa yang mau dicek spesifikasinya? (Contoh: 'Spesifikasi Asus TUF')")
+
+    # --- PERBAIKAN LOGIKA ASK_PRICE ---
+    elif intent == "ask_price":
+        match = re.search(r'(?:harga)\s+([\w\s]+)|([\w\s]+?)\s+(?:berapa|harganya)', raw_user_input, re.IGNORECASE)
+
+        laptop_name = None
+        if match:
+            laptop_name = match.group(1) if match.group(1) else match.group(2)
+
+        if laptop_name and len(laptop_name.strip()) > 2:
+            filtered_laptop = df[df['Laptop'].str.contains(laptop_name.strip(), case=False, na=False)]
+            if not filtered_laptop.empty:
+                row = filtered_laptop.iloc[0]
+                harga = format_idr(row['Final Price'])
+                return(f"Harga {row['Brand']} {row['Model']} sekitar {harga}.")
+            else:
+                return(f"Maaf, harga laptop '{laptop_name}' tidak ditemukan.")
+        else:
+            return("Mau cek harga laptop apa? (Contoh: 'Harga Lenovo Legion berapa?')")
+
+    elif intent == "compare_laptops":
+        # Simple logic for comparing laptops (can be expanded)
+        return("Untuk membandingkan, mohon sebutkan dua nama laptop yang ingin Anda bandingkan secara spesifik (misal: 'bandingkan Asus TUF dan Acer Nitro').")
+    elif intent == "clarify_requirement":
+        # Simple logic for clarifying requirements
+        return("Baik, saya mengerti. Bisakah Anda memberikan lebih banyak detail tentang kebutuhan Anda? Misalnya, untuk keperluan apa laptop ini akan digunakan (gaming, kerja, desain, dll.), atau fitur spesifik lainnya?")
+
+    else:
+        return("Maaf, saya belum paham maksud Anda.")
 
 def format_results(df):
     df = df.copy()
     # Convert USD → IDR for display
-    df["Final Price (IDR)"] = (df["final price"] * 16000).astype(int)
+    df["Final Price (IDR)"] = format_idr(df["final price"])
 
     # Drop USD column for user-facing output
     df = df.drop(columns=["final price"])
