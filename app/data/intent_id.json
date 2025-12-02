@@ -40,6 +40,18 @@
     "label": "greeting"
   },
   {
+    "text": "Hai",
+    "label": "greeting"
+  },
+  {
+    "text": "Selamat siang",
+    "label": "greeting"
+  },
+  {
+    "text": "Waalaikumsalam",
+    "label": "greeting"
+  },
+  {
     "text": "Aku mau laptop untuk gaming",
     "label": "ask_recommendation"
   },
@@ -69,6 +81,50 @@
   },
   {
     "text": "Spill laptop harga pelajar dong",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Rekomendasi laptop gaming budget 15 juta",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Laptop untuk kuliah yang bagus apa ya",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Cari laptop ringan buat dibawa kemana-mana",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Laptop untuk editing video 4K",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Butuh laptop untuk kerja kantoran",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Laptop RAM 16GB yang murah",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Saya mau laptop touchscreen",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Laptop layar besar 17 inch",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Kasih rekomendasi laptop SSD 512GB",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Laptop yang bagus untuk multitasking",
+    "label": "ask_recommendation"
+  },
+  {
+    "text": "Cari laptop tipis dan ringan",
     "label": "ask_recommendation"
   },
   {
@@ -104,6 +160,42 @@
     "label": "ask_specs"
   },
   {
+    "text": "Spek Lenovo Legion apa aja?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Detail spesifikasi Acer Nitro dong",
+    "label": "ask_specs"
+  },
+  {
+    "text": "MSI GF63 pakai GPU apa?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "HP Pavilion itu storage berapa?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Dell Inspiron layarnya IPS gak?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Asus ROG pake prosesor i5 atau i7?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "MacBook Air RAM nya bisa diupgrade?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Acer Swift berapa beratnya?",
+    "label": "ask_specs"
+  },
+  {
+    "text": "Lenovo ThinkPad baterainya tahan berapa jam?",
+    "label": "ask_specs"
+  },
+  {
     "text": "Berapa harga Lenovo Legion?",
     "label": "ask_price"
   },
@@ -124,20 +216,32 @@
     "label": "ask_price"
   },
   {
-    "text": "Mending Acer Nitro atau Asus TUF?",
-    "label": "compare_laptops"
+    "text": "Harga MSI GF63 berapa sih?",
+    "label": "ask_price"
   },
   {
-    "text": "Bagusan mana Lenovo vs HP?",
-    "label": "compare_laptops"
+    "text": "Acer Nitro 5 harganya kisaran berapa?",
+    "label": "ask_price"
   },
   {
-    "text": "Bedanya apa sama tipe sebelumnya?",
-    "label": "compare_laptops"
+    "text": "HP Pavilion ini mahal gak?",
+    "label": "ask_price"
   },
   {
-    "text": "Lebih worth it mana sama Macbook Air?",
-    "label": "compare_laptops"
+    "text": "Dell XPS harganya berapa ya?",
+    "label": "ask_price"
+  },
+  {
+    "text": "Asus Vivobook harganya sekitar berapa?",
+    "label": "ask_price"
+  },
+  {
+    "text": "MacBook Pro kisaran harga berapa?",
+    "label": "ask_price"
+  },
+  {
+    "text": "Lenovo IdeaPad berapa harganya?",
+    "label": "ask_price"
   },
   {
     "text": "Aku butuh yang ringan dan baterainya lama",
@@ -164,6 +268,22 @@
     "label": "clarify_requirement"
   },
   {
+    "text": "Yang penting prosesornya kencang",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Saya lebih suka yang ada backlit keyboard",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Harus bisa upgrade RAM sendiri",
+    "label": "clarify_requirement"
+  },
+  {
+    "text": "Yang bisa main game AAA lancar",
+    "label": "clarify_requirement"
+  },
+  {
     "text": "Terima kasih",
     "label": "goodbye"
   },
@@ -185,6 +305,22 @@
   },
   {
     "text": "Cukup, itu saja",
+    "label": "goodbye"
+  },
+  {
+    "text": "Sampai jumpa",
+    "label": "goodbye"
+  },
+  {
+    "text": "Dadah",
+    "label": "goodbye"
+  },
+  {
+    "text": "Sudah cukup",
+    "label": "goodbye"
+  },
+  {
+    "text": "Makasih ya",
     "label": "goodbye"
   },
   {
@@ -217,6 +353,18 @@
   },
   {
     "text": "Saya lapar",
+    "label": "fallback"
+  },
+  {
+    "text": "Cuaca hari ini",
+    "label": "fallback"
+  },
+  {
+    "text": "Kapan jadwal pertandingan?",
+    "label": "fallback"
+  },
+  {
+    "text": "Resep kue",
     "label": "fallback"
   }
 ]

@@ -1,7 +1,9 @@
 import pandas as pd
 import os
 
-DATA_PATH = os.path.join("data", "laptops.csv")
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(os.path.dirname(SCRIPT_DIR), "data", "laptops.csv")
 
 def load_data():
     df = pd.read_csv(DATA_PATH)

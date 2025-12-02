@@ -39,7 +39,9 @@ def preprocess_text(text):
 # ==========================================
 # PERSIAPAN DATA & TRAINING MODEL
 # ==========================================
-DATA_PATH = os.path.join("data", "intent_id.json")
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(os.path.dirname(SCRIPT_DIR), "data", "intent_id.json")
 
 # Load dataset
 with open(DATA_PATH, encoding="utf-8") as f:
@@ -53,8 +55,9 @@ model = make_pipeline(TfidfVectorizer(), MultinomialNB())
 model.fit(texts, labels)
 
 # Simpan model (Opsional, untuk arsip)
-os.makedirs("models", exist_ok=True)
-with open("models/intent_model_simple.pkl", "wb") as f:
+MODELS_DIR = os.path.join(SCRIPT_DIR, "models")
+os.makedirs(MODELS_DIR, exist_ok=True)
+with open(os.path.join(MODELS_DIR, "intent_model_simple.pkl"), "wb") as f:
     pickle.dump(model, f)
 print("✅ Model berhasil dilatih dan siap digunakan.\n")
 

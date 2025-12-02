@@ -51,15 +51,24 @@ def format_idr(usd_price):
 
 df = load_data()
 
-def extract_laptop_name(entities: dict) -> Optional[str]:
-    """Extract laptop name/model from NER entities"""
+def extract_laptop_name(entities: dict) -> tuple[Optional[str], Optional[str]]:
+    """Extract laptop brand and model from NER entities, returns (brand, model)"""
     # Combine BRAND tokens
     brand_tokens = entities.get("B-BRAND", []) + entities.get("I-BRAND", [])
-    brand = " ".join(brand_tokens).replace("##", "").strip()
+    # Filter out BERT special tokens
+    brand_tokens = [t for t in brand_tokens if t not in ['[CLS]', '[SEP]', '[PAD]', '[UNK]']]
+    brand = "".join(brand_tokens).replace("##", "") if brand_tokens else None
     
-    # For laptop name queries, we might also check other entity types
-    # You can expand this to look for MODEL entities if you add that label
-    return brand if brand else None
+    # Combine MODEL tokens
+    model_tokens = entities.get("B-MODEL", []) + entities.get("I-MODEL", [])
+    # Filter out BERT special tokens
+    model_tokens = [t for t in model_tokens if t not in ['[CLS]', '[SEP]', '[PAD]', '[UNK]']]
+    model = "".join(model_tokens).replace("##", "") if model_tokens else None
+    
+    print(f"[DEBUG] Brand tokens: {brand_tokens} → '{brand}'")
+    print(f"[DEBUG] Model tokens: {model_tokens} → '{model}'")
+    
+    return brand, model
 
 def extract_params(text: str, entities: dict):
     """Extract recommendation parameters from text and entities"""
@@ -68,8 +77,11 @@ def extract_params(text: str, entities: dict):
     # Extract BRAND
     if "B-BRAND" in entities or "I-BRAND" in entities:
         brand_tokens = entities.get("B-BRAND", []) + entities.get("I-BRAND", [])
+        # Filter out BERT special tokens
+        brand_tokens = [t for t in brand_tokens if t not in ['[CLS]', '[SEP]', '[PAD]', '[UNK]']]
         brand = "".join(brand_tokens).replace("##", "")
-        params["brand"] = brand
+        if brand:
+            params["brand"] = brand
     
     # Extract USAGE
     if "B-USAGE" in entities or "I-USAGE" in entities:
@@ -130,6 +142,8 @@ def extract_params(text: str, entities: dict):
 
 def chatbot_reply(user_text: str):
     intent = predict_intent(user_text)
+    print(f"[DEBUG] Intent: {intent}")
+    
     if intent == "goodbye":
         return("Terima kasih! Semoga harimu menyenangkan. 👋")
 
@@ -142,7 +156,9 @@ def chatbot_reply(user_text: str):
     elif intent == "ask_recommendation":
         # Extract entities and parameters
         entities = predict_entities(user_text)
+        print(f"[DEBUG] Entities: {entities}")
         params = extract_params(user_text, entities)
+        print(f"[DEBUG] Extracted Params: {params}")
         
         # Get recommendations with extracted parameters
         results = recommend(df, **params)
@@ -162,90 +178,87 @@ def chatbot_reply(user_text: str):
     elif intent == "ask_specs":
         # Use NER to extract laptop brand/name
         entities = predict_entities(user_text)
-        laptop_name = extract_laptop_name(entities)
+        print(f"[DEBUG] Entities for ask_specs: {entities}")
+        brand, model = extract_laptop_name(entities)
+        print(f"[DEBUG] Extracted brand: {brand}, model: {model}")
+        
+        # Build search filter
+        filtered_laptop = df.copy()
+        
+        if brand:
+            filtered_laptop = filtered_laptop[
+                filtered_laptop['Brand'].str.contains(brand, case=False, na=False)
+            ]
+        
+        if model:
+            filtered_laptop = filtered_laptop[
+                filtered_laptop['Model'].str.contains(model, case=False, na=False)
+            ]
         
         # Fallback to regex if NER doesn't find anything
-        if not laptop_name:
+        if not brand and not model:
             match = re.search(r'(?:spesifikasi|spek)\s+([\w\s]+)|([\w\s]+?)\s+(?:gimana|speknya|itu)', user_text, re.IGNORECASE)
             if match:
-                laptop_name = match.group(1) if match.group(1) else match.group(2)
+                search_term = match.group(1) if match.group(1) else match.group(2)
+                if search_term and len(search_term.strip()) > 2:
+                    filtered_laptop = df[
+                        df['Brand'].str.contains(search_term.strip(), case=False, na=False) |
+                        df['Model'].str.contains(search_term.strip(), case=False, na=False)
+                    ]
         
-        if laptop_name and len(laptop_name.strip()) > 2:
-            # Search in DataFrame (check Brand or Model columns)
-            filtered_laptop = df[
-                df['Brand'].str.contains(laptop_name.strip(), case=False, na=False) |
-                df['Model'].str.contains(laptop_name.strip(), case=False, na=False)
-            ]
-            
-            if not filtered_laptop.empty:
-                row = filtered_laptop.iloc[0]
-                specs = f"Spesifikasi {row['Brand']} {row['Model']}:\n"
-                specs += f"   • CPU: {row['CPU']}\n"
-                specs += f"   • RAM: {row['RAM']}GB | Storage: {row['Storage']}GB\n"
-                specs += f"   • GPU: {row['GPU']}\n"
-                specs += f"   • Screen: {row['Screen']}\" | Touch: {row['Touch']}\n"
-                specs += f"   • Harga: {format_idr(row['Final Price'])}"
-                return specs
-            else:
-                return f"Maaf, saya tidak menemukan laptop bernama '{laptop_name}'."
+        if not filtered_laptop.empty:
+            row = filtered_laptop.iloc[0]
+            specs = f"Spesifikasi {row['Brand']} {row['Model']}:\n"
+            specs += f"   • CPU: {row['CPU']}\n"
+            specs += f"   • RAM: {row['RAM']}GB | Storage: {row['Storage']}GB\n"
+            specs += f"   • GPU: {row['GPU']}\n"
+            specs += f"   • Screen: {row['Screen']}\" | Touch: {row['Touch']}\n"
+            specs += f"   • Harga: {format_idr(row['Final Price'])}"
+            return specs
         else:
-            return "Laptop merk apa yang mau dicek spesifikasinya? (Contoh: 'Spesifikasi Asus TUF')"
+            search_desc = f"{brand} {model}".strip() if brand or model else "laptop tersebut"
+            return f"Maaf, saya tidak menemukan laptop '{search_desc}'."
 
     # --- PERBAIKAN LOGIKA ASK_PRICE (with NER) ---
     elif intent == "ask_price":
         # Use NER to extract laptop brand/name
         entities = predict_entities(user_text)
-        laptop_name = extract_laptop_name(entities)
+        print(f"[DEBUG] Entities for ask_price: {entities}")
+        brand, model = extract_laptop_name(entities)
+        print(f"[DEBUG] Extracted brand: {brand}, model: {model}")
+        
+        # Build search filter
+        filtered_laptop = df.copy()
+        
+        if brand:
+            filtered_laptop = filtered_laptop[
+                filtered_laptop['Brand'].str.contains(brand, case=False, na=False)
+            ]
+        
+        if model:
+            filtered_laptop = filtered_laptop[
+                filtered_laptop['Model'].str.contains(model, case=False, na=False)
+            ]
         
         # Fallback to regex if NER doesn't find anything
-        if not laptop_name:
+        if not brand and not model:
             match = re.search(r'(?:harga)\s+([\w\s]+)|([\w\s]+?)\s+(?:berapa|harganya)', user_text, re.IGNORECASE)
             if match:
-                laptop_name = match.group(1) if match.group(1) else match.group(2)
+                search_term = match.group(1) if match.group(1) else match.group(2)
+                if search_term and len(search_term.strip()) > 2:
+                    filtered_laptop = df[
+                        df['Brand'].str.contains(search_term.strip(), case=False, na=False) |
+                        df['Model'].str.contains(search_term.strip(), case=False, na=False)
+                    ]
         
-        if laptop_name and len(laptop_name.strip()) > 2:
-            filtered_laptop = df[
-                df['Brand'].str.contains(laptop_name.strip(), case=False, na=False) |
-                df['Model'].str.contains(laptop_name.strip(), case=False, na=False)
-            ]
-            
-            if not filtered_laptop.empty:
-                row = filtered_laptop.iloc[0]
-                harga = format_idr(row['Final Price'])
-                return f"Harga {row['Brand']} {row['Model']} sekitar {harga}."
-            else:
-                return f"Maaf, harga laptop '{laptop_name}' tidak ditemukan."
+        if not filtered_laptop.empty:
+            row = filtered_laptop.iloc[0]
+            harga = format_idr(row['Final Price'])
+            return f"Harga {row['Brand']} {row['Model']} sekitar {harga}."
         else:
-            return "Mau cek harga laptop apa? (Contoh: 'Harga Lenovo Legion berapa?')"
+            search_desc = f"{brand} {model}".strip() if brand or model else "laptop tersebut"
+            return f"Maaf, harga laptop '{search_desc}' tidak ditemukan."
 
-    elif intent == "compare_laptops":
-        # Use NER to extract laptop brands
-        entities = predict_entities(user_text)
-        laptop_name = extract_laptop_name(entities)
-        
-        # Check if user wants to compare with previous results
-        if conversation_memory["last_results"] is not None and len(conversation_memory["last_results"]) >= 2:
-            if not laptop_name:  # User says "bandingkan" without specifying
-                # Compare top 2 from last results
-                df_results = conversation_memory["last_results"]
-                laptop1 = df_results.iloc[0]
-                laptop2 = df_results.iloc[1]
-                
-                comparison = f"Perbandingan:\n\n"
-                comparison += f"📱 {laptop1['Brand']} {laptop1['Model']}:\n"
-                comparison += f"   CPU: {laptop1['CPU']} | RAM: {laptop1['RAM']}GB\n"
-                comparison += f"   GPU: {laptop1['GPU']} | Storage: {laptop1['Storage']}GB\n"
-                comparison += f"   Screen: {laptop1['Screen']}\" | Harga: {format_idr(laptop1['Final Price'])}\n\n"
-                
-                comparison += f"📱 {laptop2['Brand']} {laptop2['Model']}:\n"
-                comparison += f"   CPU: {laptop2['CPU']} | RAM: {laptop2['RAM']}GB\n"
-                comparison += f"   GPU: {laptop2['GPU']} | Storage: {laptop2['Storage']}GB\n"
-                comparison += f"   Screen: {laptop2['Screen']}\" | Harga: {format_idr(laptop2['Final Price'])}"
-                
-                return comparison
-        
-        # Otherwise ask for specific laptops
-        return "Untuk membandingkan, mohon sebutkan dua nama laptop yang ingin Anda bandingkan secara spesifik (misal: 'bandingkan Asus TUF dan Acer Nitro')."
     elif intent == "clarify_requirement":
         # Use conversation memory to provide context-aware clarification
         if conversation_memory["last_params"]:
@@ -272,9 +285,9 @@ def chatbot_reply(user_text: str):
 def format_results(df):
     df = df.copy()
     # Convert USD → IDR for display
-    df["Final Price (IDR)"] = format_idr(df["final price"])
+    df["Final Price (IDR)"] = df["Final Price"].apply(lambda x: format_idr(x))
 
     # Drop USD column for user-facing output
-    df = df.drop(columns=["final price"])
+    df = df.drop(columns=["Final Price"])
 
     return df

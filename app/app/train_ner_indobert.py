@@ -4,7 +4,9 @@ import numpy as np
 import os
 import evaluate
 
-DATA_PATH = os.path.join("data", "ner_id.json")
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(os.path.dirname(SCRIPT_DIR), "data", "ner_id.json")
 dataset = load_dataset("json", data_files=DATA_PATH)
 
 # Split dataset: 80% train, 20% test
@@ -13,7 +15,7 @@ print(f"Train size: {len(dataset['train'])}, Test size: {len(dataset['test'])}")
 
 tokenizer = AutoTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
 
-label_list = ["O", "B-BRAND", "I-BRAND", "B-RAM", "I-RAM", "B-STORAGE", "I-STORAGE", 
+label_list = ["O", "B-BRAND", "I-BRAND", "B-MODEL", "I-MODEL", "B-RAM", "I-RAM", "B-STORAGE", "I-STORAGE", 
               "B-SCREEN_SIZE", "I-SCREEN_SIZE", "B-BUDGET", "I-BUDGET", "B-USAGE", "I-USAGE",
               "B-TOUCHSCREEN", "I-TOUCHSCREEN"]
 label2id = {l:i for i,l in enumerate(label_list)}
@@ -73,7 +75,7 @@ model = AutoModelForTokenClassification.from_pretrained(
 )
 
 args = TrainingArguments(
-    output_dir="models/indobert_ner",
+    output_dir=os.path.join(SCRIPT_DIR, "models", "indobert_ner"),
     num_train_epochs=5,
     per_device_train_batch_size=4,
     eval_strategy="epoch",
@@ -108,8 +110,9 @@ trainer = Trainer(
 )
 
 trainer.train()
-trainer.save_model("models/indobert_ner")
-tokenizer.save_pretrained("models/indobert_ner")
+MODELS_NER_DIR = os.path.join(SCRIPT_DIR, "models", "indobert_ner")
+trainer.save_model(MODELS_NER_DIR)
+tokenizer.save_pretrained(MODELS_NER_DIR)
 
 # Evaluate on test set and print results
 print("\n" + "="*80)

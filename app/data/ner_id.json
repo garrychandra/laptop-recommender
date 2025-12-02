@@ -1324,5 +1324,379 @@
       { "start": 35, "end": 52, "label": "BUDGET" },
       { "start": 53, "end": 60, "label": "STORAGE" }
     ]
+  },
+  {
+    "text": "Spesifikasi Asus TUF Gaming berapa?",
+    "entities": [
+      { "start": 12, "end": 16, "label": "BRAND" },
+      { "start": 17, "end": 20, "label": "MODEL" },
+      { "start": 21, "end": 27, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Harga Asus ROG Strix berapa?",
+    "entities": [
+      { "start": 6, "end": 10, "label": "BRAND" },
+      { "start": 11, "end": 14, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Saya mau laptop Lenovo Legion untuk gaming",
+    "entities": [
+      { "start": 16, "end": 22, "label": "BRAND" },
+      { "start": 23, "end": 29, "label": "MODEL" },
+      { "start": 36, "end": 42, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Acer Nitro 5 cocok untuk gaming gak?",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 10, "label": "MODEL" },
+      { "start": 21, "end": 27, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "HP Pavilion gimana spesifikasinya?",
+    "entities": [
+      { "start": 0, "end": 2, "label": "BRAND" },
+      { "start": 3, "end": 11, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Dell Inspiron untuk kuliah bagus gak?",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 13, "label": "MODEL" },
+      { "start": 20, "end": 26, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "MSI Katana harganya berapa?",
+    "entities": [
+      { "start": 0, "end": 3, "label": "BRAND" },
+      { "start": 4, "end": 10, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Asus VivoBook cocok buat kerja kantoran",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 13, "label": "MODEL" },
+      { "start": 25, "end": 30, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Lenovo IdeaPad Gaming budget 15 juta",
+    "entities": [
+      { "start": 0, "end": 6, "label": "BRAND" },
+      { "start": 7, "end": 14, "label": "MODEL" },
+      { "start": 15, "end": 21, "label": "USAGE" },
+      { "start": 22, "end": 37, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "HP Victus RAM 16GB untuk gaming",
+    "entities": [
+      { "start": 0, "end": 2, "label": "BRAND" },
+      { "start": 3, "end": 9, "label": "MODEL" },
+      { "start": 10, "end": 18, "label": "RAM" },
+      { "start": 25, "end": 31, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Lenovo ThinkPad cocok untuk programming",
+    "entities": [
+      { "start": 0, "end": 6, "label": "BRAND" },
+      { "start": 7, "end": 15, "label": "MODEL" },
+      { "start": 28, "end": 39, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Saya cari Asus ZenBook layar 13 inch",
+    "entities": [
+      { "start": 10, "end": 14, "label": "BRAND" },
+      { "start": 15, "end": 22, "label": "MODEL" },
+      { "start": 29, "end": 37, "label": "SCREEN_SIZE" }
+    ]
+  },
+  {
+    "text": "MSI GF63 Thin speknya apa?",
+    "entities": [
+      { "start": 0, "end": 3, "label": "BRAND" },
+      { "start": 4, "end": 8, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Dell XPS 13 harganya kisaran berapa?",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 8, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Acer Swift untuk kerja mobile",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 10, "label": "MODEL" },
+      { "start": 17, "end": 22, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "MacBook Air M2 berapa harganya?",
+    "entities": [
+      { "start": 0, "end": 7, "label": "BRAND" },
+      { "start": 8, "end": 11, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "MacBook Pro 14 inch untuk editing video",
+    "entities": [
+      { "start": 0, "end": 7, "label": "BRAND" },
+      { "start": 8, "end": 11, "label": "MODEL" },
+      { "start": 12, "end": 19, "label": "SCREEN_SIZE" },
+      { "start": 26, "end": 39, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "HP Omen untuk gaming AAA",
+    "entities": [
+      { "start": 0, "end": 2, "label": "BRAND" },
+      { "start": 3, "end": 7, "label": "MODEL" },
+      { "start": 14, "end": 20, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Lenovo Yoga touchscreen untuk desain",
+    "entities": [
+      { "start": 0, "end": 6, "label": "BRAND" },
+      { "start": 7, "end": 11, "label": "MODEL" },
+      { "start": 12, "end": 23, "label": "TOUCHSCREEN" },
+      { "start": 30, "end": 36, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "MSI Cyborg budget 20 juta",
+    "entities": [
+      { "start": 0, "end": 3, "label": "BRAND" },
+      { "start": 4, "end": 10, "label": "MODEL" },
+      { "start": 11, "end": 25, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Asus Chromebook untuk anak sekolah",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 15, "label": "MODEL" },
+      { "start": 22, "end": 34, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Dell Latitude RAM 8GB storage 512GB",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 13, "label": "MODEL" },
+      { "start": 14, "end": 21, "label": "RAM" },
+      { "start": 22, "end": 35, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "Acer Predator untuk gaming berat",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 13, "label": "MODEL" },
+      { "start": 20, "end": 26, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "MSI Vector RAM 32GB SSD 1TB",
+    "entities": [
+      { "start": 0, "end": 3, "label": "BRAND" },
+      { "start": 4, "end": 10, "label": "MODEL" },
+      { "start": 11, "end": 19, "label": "RAM" },
+      { "start": 20, "end": 27, "label": "STORAGE" }
+    ]
+  },
+  {
+    "text": "HP EliteBook untuk bisnis",
+    "entities": [
+      { "start": 0, "end": 2, "label": "BRAND" },
+      { "start": 3, "end": 12, "label": "MODEL" },
+      { "start": 19, "end": 25, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Asus TUF A15 vs TUF F15 bagusan mana?",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 8, "label": "MODEL" },
+      { "start": 16, "end": 19, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Lenovo Legion 5 Pro harga berapa?",
+    "entities": [
+      { "start": 0, "end": 6, "label": "BRAND" },
+      { "start": 7, "end": 13, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Acer Aspire 5 cocok kuliah gak?",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 11, "label": "MODEL" },
+      { "start": 19, "end": 25, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Dell Vostro untuk kerja kantoran",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 11, "label": "MODEL" },
+      { "start": 18, "end": 23, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "MSI Prestige touchscreen untuk desain",
+    "entities": [
+      { "start": 0, "end": 3, "label": "BRAND" },
+      { "start": 4, "end": 12, "label": "MODEL" },
+      { "start": 13, "end": 24, "label": "TOUCHSCREEN" },
+      { "start": 31, "end": 37, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "HP Spectre x360 touchscreen budget 25 juta",
+    "entities": [
+      { "start": 0, "end": 2, "label": "BRAND" },
+      { "start": 3, "end": 10, "label": "MODEL" },
+      { "start": 16, "end": 27, "label": "TOUCHSCREEN" },
+      { "start": 28, "end": 43, "label": "BUDGET" }
+    ]
+  },
+  {
+    "text": "Lenovo IdeaPad Flex touchscreen untuk meeting",
+    "entities": [
+      { "start": 0, "end": 6, "label": "BRAND" },
+      { "start": 7, "end": 14, "label": "MODEL" },
+      { "start": 20, "end": 31, "label": "TOUCHSCREEN" },
+      { "start": 38, "end": 45, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Asus ROG Zephyrus untuk gaming esports",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 8, "label": "MODEL" },
+      { "start": 20, "end": 26, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Dell G15 RAM 16GB untuk gaming",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 8, "label": "MODEL" },
+      { "start": 9, "end": 17, "label": "RAM" },
+      { "start": 24, "end": 30, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Acer TravelMate untuk kerja sales",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 15, "label": "MODEL" },
+      { "start": 22, "end": 27, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "MSI Creator untuk content creator",
+    "entities": [
+      { "start": 0, "end": 3, "label": "BRAND" },
+      { "start": 4, "end": 11, "label": "MODEL" },
+      { "start": 18, "end": 33, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "HP Envy touchscreen layar 14 inch",
+    "entities": [
+      { "start": 0, "end": 2, "label": "BRAND" },
+      { "start": 3, "end": 7, "label": "MODEL" },
+      { "start": 8, "end": 19, "label": "TOUCHSCREEN" },
+      { "start": 20, "end": 33, "label": "SCREEN_SIZE" }
+    ]
+  },
+  {
+    "text": "Lenovo V15 budget 5 juta untuk kuliah",
+    "entities": [
+      { "start": 0, "end": 6, "label": "BRAND" },
+      { "start": 7, "end": 10, "label": "MODEL" },
+      { "start": 11, "end": 25, "label": "BUDGET" },
+      { "start": 32, "end": 38, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Spek Asus ExpertBook gimana?",
+    "entities": [
+      { "start": 5, "end": 9, "label": "BRAND" },
+      { "start": 10, "end": 20, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Harga MSI Crosshair berapa ya?",
+    "entities": [
+      { "start": 6, "end": 9, "label": "BRAND" },
+      { "start": 10, "end": 19, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Bandingkan Lenovo IdeaPad dengan HP Pavilion",
+    "entities": [
+      { "start": 11, "end": 17, "label": "BRAND" },
+      { "start": 18, "end": 25, "label": "MODEL" },
+      { "start": 33, "end": 35, "label": "BRAND" },
+      { "start": 36, "end": 44, "label": "MODEL" }
+    ]
+  },
+  {
+    "text": "Asus VivoBook Pro OLED untuk desain grafis",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 13, "label": "MODEL" },
+      { "start": 29, "end": 35, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "MSI Modern 14 RAM 8GB untuk kerja",
+    "entities": [
+      { "start": 0, "end": 3, "label": "BRAND" },
+      { "start": 4, "end": 10, "label": "MODEL" },
+      { "start": 14, "end": 21, "label": "RAM" },
+      { "start": 28, "end": 33, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Dell Alienware untuk gaming hardcore",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 14, "label": "MODEL" },
+      { "start": 21, "end": 27, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "HP ProBook layar 14 inch untuk kantor",
+    "entities": [
+      { "start": 0, "end": 2, "label": "BRAND" },
+      { "start": 3, "end": 10, "label": "MODEL" },
+      { "start": 11, "end": 24, "label": "SCREEN_SIZE" },
+      { "start": 31, "end": 37, "label": "USAGE" }
+    ]
+  },
+  {
+    "text": "Acer Spin touchscreen 2-in-1",
+    "entities": [
+      { "start": 0, "end": 4, "label": "BRAND" },
+      { "start": 5, "end": 9, "label": "MODEL" },
+      { "start": 10, "end": 21, "label": "TOUCHSCREEN" }
+    ]
   }
 ]

@@ -1,4 +1,4 @@
-torch==2.3.0 --index-url https://download.pytorch.org/whl/cu121
+torch
 transformers
 pandas
 numpy
