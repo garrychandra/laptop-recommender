@@ -1,3 +1,2 @@
-app/app/models/*
 .venv*
 app/app/__pycache__
