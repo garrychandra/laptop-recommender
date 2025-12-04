@@ -1,4 +1,4 @@
-xfrom app.chatbot import chatbot_reply
+from app.chatbot import chatbot_reply
 
 print("🤖 Laptop Recommender Chatbot (Bahasa Indonesia)")
 print("Tulis 'keluar' untuk berhenti.")

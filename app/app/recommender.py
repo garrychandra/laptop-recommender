@@ -16,7 +16,7 @@ def load_data():
 
     return df
 
-def recommend(df, usage=None, budget=None, brand=None, screen_size=None, preference=None, ram=None, touchscreen=None):
+def recommend(df, usage=None, budget=None, brand=None, screen_size=None, preference=None, ram=None, storage=None, touchscreen=None):
     results = df.copy()
 
     # BRAND FILTER
@@ -40,6 +40,10 @@ def recommend(df, usage=None, budget=None, brand=None, screen_size=None, prefere
     # RAM FILTER
     if ram:
         results = results[results["RAM"] >= ram]
+    
+    # STORAGE FILTER
+    if storage:
+        results = results[results["Storage"] >= storage]
 
     # TOUCHSCREEN FILTER
     if touchscreen is not None:

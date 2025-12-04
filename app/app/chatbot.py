@@ -125,6 +125,14 @@ def extract_params(text: str, entities: dict):
         if numbers:
             params["ram"] = int(numbers[0])
     
+    # Extract STORAGE
+    if "B-STORAGE" in entities or "I-STORAGE" in entities:
+        storage_tokens = entities.get("B-STORAGE", []) + entities.get("I-STORAGE", [])
+        storage_text = "".join(storage_tokens).replace("##", "")
+        numbers = re.findall(r'\d+', storage_text)
+        if numbers:
+            params["storage"] = int(numbers[0])
+    
     # Extract TOUCHSCREEN
     if "B-TOUCHSCREEN" in entities or "I-TOUCHSCREEN" in entities:
         touchscreen_tokens = entities.get("B-TOUCHSCREEN", []) + entities.get("I-TOUCHSCREEN", [])
